@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color--1: #F2AE2E;
+    --color--2: #F29B30;
+    --color--3: #F2DCC2;
+    --color--4: #D95E32;
+    --color--5: #594C47;
+}
+
+* {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    padding: 28px 5%;
+    background-color: var(--color--3);
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 25px;
+    color: var(--color--5);
+}
+
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-list li a {
+    color: rgb(64, 63, 63);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+}
+
+.nav-list li a:hover {
+    border-bottom: 3px solid #F2AE2E;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+}
+
+#nav-botao {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-weight: 600;
+    background-color: #F2AE2E;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#nav-botao:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.409);
+}
+
+/* aqui vai deixar invisivel as animaçoes */
+
+.foto-chefe,
+.foto-lanches,
+.text,
+.text-foto-gourmet,
+.imgGurmet,
+.paragrafo-fotogourmet,
+.img-carnegourmet,
+.img-chefe-gourmet,
+.textfinal
+{
+    visibility: hidden;
+}
+
+/* aqui animacão keyframes */
+
+.img-chef-gourmet img {
+    position: relative;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 25px;
+    }
+}
